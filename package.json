@@ -1,0 +1,14 @@
+{
+  "name": "ify",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:backend": "bun run --cwd packages/backend dev",
+    "dev:frontend": "bun run --cwd packages/frontend dev",
+    "db:migrate": "bun run --cwd packages/backend db:migrate",
+    "db:seed": "bun run --cwd packages/backend db:seed",
+    "test": "bun run test:backend && bun run test:frontend",
+    "test:backend": "bun run --cwd packages/backend test",
+    "test:frontend": "bun run --cwd packages/frontend test"
+  }
+}

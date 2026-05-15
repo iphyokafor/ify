@@ -1,0 +1,8 @@
+{
+  "name": "@ify/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/types.ts"
+  }
+}

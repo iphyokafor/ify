@@ -1,0 +1,22 @@
+{
+  "name": "@ify/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --env-file .env --watch src/index.ts",
+    "db:migrate": "bun run --env-file .env src/db/migrate.ts",
+    "db:seed": "bun run --env-file .env src/db/seed.ts",
+    "test": "bun test --env-file .env.test"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "^2.0.2",
+    "@ify/shared": "workspace:*",
+    "hono": "^4.0.0",
+    "jose": "^6.2.3",
+    "postgres": "^3.4.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
