@@ -101,3 +101,6 @@ Honest answer: the code is fine for one machine and a few thousand users. Past t
 
 What I deliberately didn't do: event bus, CQRS, hexagonal scaffolding. They earn their keep when there's a real second consumer of writes or a real read/write asymmetry — neither exists yet.
 
+## Demo
+
+[View the demo video](docs/ify-social-app-demo.mp4)
